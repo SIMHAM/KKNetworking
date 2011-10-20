@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KKNetworkingOperation.h"
 
 @interface KKNetworking : NSObject
+
+@property (nonatomic, readonly) NSUInteger runningOperations;
+@property (nonatomic, strong, readonly) NSMutableSet *operations;
+
++ (KKNetworking *)sharedNetworkingEngine;
 
 @end

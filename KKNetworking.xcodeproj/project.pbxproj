@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		1A28BB15144F91C00051446D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A28BB14144F91C00051446D /* Foundation.framework */; };
 		1A28BB1B144F91C00051446D /* KKNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A28BB1A144F91C00051446D /* KKNetworking.m */; };
+		1A28BB27144FDEAB0051446D /* KKNetworkingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A28BB25144FDEAB0051446D /* KKNetworkingOperation.h */; };
+		1A28BB28144FDEAB0051446D /* KKNetworkingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A28BB26144FDEAB0051446D /* KKNetworkingOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A28BB11144F91C00051446D /* libKKNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKKNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A28BB14144F91C00051446D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1A28BB18144F91C00051446D /* KKNetworking-Prefix.pch */ = {isa = PBXFileReference; path = "KKNetworking-Prefix.pch"; sourceTree = "<group>"; };
-		1A28BB19144F91C00051446D /* KKNetworking.h */ = {isa = PBXFileReference; path = KKNetworking.h; sourceTree = "<group>"; };
+		1A28BB18144F91C00051446D /* KKNetworking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKNetworking-Prefix.pch"; sourceTree = "<group>"; };
+		1A28BB19144F91C00051446D /* KKNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNetworking.h; sourceTree = "<group>"; };
 		1A28BB1A144F91C00051446D /* KKNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKNetworking.m; sourceTree = "<group>"; };
+		1A28BB25144FDEAB0051446D /* KKNetworkingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNetworkingOperation.h; sourceTree = "<group>"; };
+		1A28BB26144FDEAB0051446D /* KKNetworkingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNetworkingOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				1A28BB19144F91C00051446D /* KKNetworking.h */,
 				1A28BB1A144F91C00051446D /* KKNetworking.m */,
+				1A28BB25144FDEAB0051446D /* KKNetworkingOperation.h */,
+				1A28BB26144FDEAB0051446D /* KKNetworkingOperation.m */,
 				1A28BB17144F91C00051446D /* Supporting Files */,
 			);
 			path = KKNetworking;
@@ -81,6 +87,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A28BB27144FDEAB0051446D /* KKNetworkingOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A28BB1B144F91C00051446D /* KKNetworking.m in Sources */,
+				1A28BB28144FDEAB0051446D /* KKNetworkingOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +197,7 @@
 				DSTROOT = /tmp/KKNetworking.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKNetworking/KKNetworking-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -201,6 +210,7 @@
 				DSTROOT = /tmp/KKNetworking.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKNetworking/KKNetworking-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -226,6 +236,7 @@
 				1A28BB20144F91C00051446D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
