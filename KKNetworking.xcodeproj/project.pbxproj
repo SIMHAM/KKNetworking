@@ -194,7 +194,7 @@
 		1A28BB1F144F91C00051446D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/KKNetworking.dst;
+				DSTROOT = "/../BuildProductsPath/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKNetworking/KKNetworking-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -207,7 +207,7 @@
 		1A28BB20144F91C00051446D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/KKNetworking.dst;
+				DSTROOT = "/../BuildProductsPath/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKNetworking/KKNetworking-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
